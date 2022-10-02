@@ -504,12 +504,12 @@ padding: 6px 22px;
     display: flex;
 }
 
-.client-logo{
+.client-link{
     fill: currentColor;
 }
 
 
-.client-item{
+.client-link{
     border: 1px solid var(--client-color);
     padding: 16px 32px;
     min-width: 170px;
@@ -521,8 +521,8 @@ padding: 6px 22px;
 
 }
 
-.client-item:hover,
-.client-item:focus{
+.client-link:hover,
+.client-link:focus{
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
     transition: var(--transition);

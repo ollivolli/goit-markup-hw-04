@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header header-line">
         <div class="container">       
              <!--Логотип-->
 <div class="nav">            <a lang="en" href="./index.html" class="header-logo link"><span class="logo-span">Web</span>Studio</a>
@@ -300,7 +300,11 @@
 <!--Модальне вікно-->
 <div class="backdrop is-hidden" data-modal>
 <div class="modal">
-    <button data-modal-close type="button" class="btn-close pointer link">X</button>
+    <button data-modal-close type="button" class="btn-close pointer link">
+        <svg class="close-back" width="18" height="18">
+            <use href="./images/close-black.svg"></use>
+        </svg>
+    </button>
 </div>
 </div>
 <script src="./js/modal.js"></script>

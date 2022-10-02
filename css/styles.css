@@ -304,6 +304,7 @@ color: var(--secondary-text-color);
     margin-bottom: 30px;
     background-color: var(--btn-color);
     border-radius: 4px;
+    fill: currentColor;
   }
 
   .list-wrapper{

@@ -5,7 +5,7 @@
     --accent-color: #2196F3;
     --btn-color: #F5F4FA;
     --client-color: #AFB1B8;
-    --transition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1)
+    --transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 h1, h2, h3, h4, h5, h6, ul, p {
@@ -100,7 +100,9 @@ body {
     
 
 }
-
+.project-item{
+    transition: var(--transition);
+}
 .project-item:hover,
 .project-item:focus{
     background: #FFFFFF;
@@ -506,7 +508,7 @@ transition: var(--transition);
     display: flex;
 }
 
-.client-link{
+.client-logo{
     fill: currentColor;
 }
 
@@ -515,18 +517,22 @@ transition: var(--transition);
     border: 1px solid var(--client-color);
     padding: 16px 32px;
     min-width: 170px;
-    fill: var(--client-color);
+    color: var(--client-color);
 
 }
 .client-link {
     display: block;
-    transition: var(--transition);
+    transition: border var(--transition);
 
+}
+
+.client-logo{
+    transition: var(--transition);
 }
 
 .client-link:hover,
 .client-link:focus{
-    fill: var(--accent-color);
+    color: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
 
@@ -545,26 +551,31 @@ transition: var(--transition);
     margin-right: 10px;
 }
 
-.links{
+.social-icon{
     fill: currentColor;
 }
 
 .links{
-    fill: var(--client-color);
+    color: var(--client-color);
+    background-color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    transition: var(--transition);
+    transition: color var(--transition);
+    transition: background-color var(--transition);
+
 }
 
 .links:hover,
 .links:focus{
     background-color: var(--accent-color);
-    fill: #FFFFFF;
+    color: #FFFFFF;
 }
+
+
 
 .social-container{
     display: flex;
@@ -610,12 +621,12 @@ margin: 16px 32px 30px 32px;
     padding-left: 0%;
 }
 
-.social-links{
+.footer-icon{
     fill: currentColor;
 }
 
 .social-links{
-    fill: #FFFFFF;
+    color: #FFFFFF;
     background-color: rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
@@ -623,7 +634,7 @@ margin: 16px 32px 30px 32px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    transition: var(--transition);
+    transition: background-color var(--transition);
 }
 
 .social-links:hover,
